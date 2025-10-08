@@ -436,7 +436,7 @@ html {
 	font-size: 1.4rem;
 	font-weight: 700;
 	text-decoration: none;
-	transition: 0.3 ease;
+	transition: 0.3s ease;
 }
 
 .courses .row .view-all:hover {
@@ -477,9 +477,7 @@ html {
 }
 
 .courses .card:hover .course-info {
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .courses .card .course-img {
@@ -643,20 +641,29 @@ html {
 }
 
 .feedback .comment .navigation .nav-item {
-	width: 50px;
-	height: 50px;
+	width: 49px;
+	height: 49px;
 	border-radius: 50px;
-	background: #2ac9bf;
-	border: none;
+	background: #fff;
+	border: 1px solid #2ac9bf;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+	transition: 0.3s ease;
 }
 
 .feedback .avatar {
 	position: relative;
 	width: 64%;
+}
+
+.feedback .comment .navigation .nav-item:hover {
+	background: #2ac9bf;
+}
+
+.feedback .comment .navigation .nav-item:hover path {
+	stroke: #fff;
 }
 
 .feedback .avatar img {
