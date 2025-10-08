@@ -632,6 +632,7 @@ html {
 	color: #070707;
 	font-size: 1.6rem;
 	font-weight: 500;
+	cursor: pointer;
 }
 
 .feedback .comment .navigation {
